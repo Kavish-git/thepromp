@@ -1,0 +1,81 @@
+================================================================================
+SYNAPSE COLLECTIVE - STUDENT SOFTWARE & AI ENGINEERING COLLECTIVE
+================================================================================
+Website: https://synapse-collective.dev  |  Email: contact@synapse-collective.dev
+Location: San Francisco Bay Area, CA     |  GitHub: github.com/synapse-collective
+Availability: Summer 2026 Internships & Contract Development
+
+--------------------------------------------------------------------------------
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Synapse Collective is an elite collegiate engineering group composed of 4 senior
+computer science students specializing in full-stack architecture, distributed
+cloud infrastructure, and autonomous AI systems. Winners of the 2025 MIT HackNation
+Grand Prize with over 18 production projects delivered and 85,000+ active users.
+
+--------------------------------------------------------------------------------
+CORE TEAM MEMBERS
+--------------------------------------------------------------------------------
+1. Shivansh - Lead Full-Stack Architect
+   Education: B.S. Computer Science, UC Berkeley (Class of 2026)
+   Focus: Next.js, Node.js, Go, Distributed Systems, Microservices, System Design
+   Key Milestone: Engineered high-throughput event pipelines handling 48k req/sec.
+
+2. Riya - Senior AI & Machine Learning Researcher
+   Education: B.S./M.S. Artificial Intelligence, Stanford University (Class of 2026)
+   Focus: PyTorch, LangChain, Vector Embeddings, Transformer Models, FastAPI
+   Key Milestone: Published undergraduate research in multi-agent prompt synthesis.
+
+3. Shristi - UI/UX & Frontend Design Technologist
+   Education: B.S. Human-Computer Interaction & CS, Carnegie Mellon (Class of 2025)
+   Focus: React, Tailwind CSS, TypeScript, WebGL, WCAG 2.1 AA Accessibility
+   Key Milestone: Designed and prototyped design systems adopted by 12+ student orgs.
+
+4. Harsh - Cloud Infrastructure & DevOps Lead
+   Education: B.S. Systems & Electrical Engineering, MIT (Class of 2026)
+   Focus: Docker, Kubernetes, AWS (Certified Solutions Architect), CI/CD, Terraform
+   Key Milestone: Architected multi-region failover cluster with 99.99% uptime.
+
+--------------------------------------------------------------------------------
+TECHNICAL PROFICIENCIES
+--------------------------------------------------------------------------------
+- Frontend: TypeScript, React, Next.js, Vue.js, Tailwind CSS, WebRTC, Redux
+- Backend: Python (FastAPI, Django), Node.js, Express, Go, Rust, GraphQL, REST
+- Databases & Cache: PostgreSQL, MongoDB, Redis, Pinecone Vector DB, TimescaleDB
+- Cloud & DevOps: AWS (EC2, S3, ECS, Lambda), Docker, Kubernetes, GitHub Actions CI/CD
+- AI / ML: PyTorch, LangChain, Hugging Face, Scikit-learn, OpenAI APIs, Prompt Eng.
+
+--------------------------------------------------------------------------------
+FEATURED PROJECTS
+--------------------------------------------------------------------------------
+1. NeuroFlow (Autonomous AI Workflow Engine)
+   - Multi-agent orchestration engine executing DAG tasks via LLM planning.
+   - Built with Next.js, FastAPI, LangChain, Redis, and Pinecone.
+   - Won 1st Place Overall at MIT HackNation 2025.
+
+2. CloudPulse (Distributed Kubernetes Telemetry Suite)
+   - Real-time observability platform processing metrics from 100+ pods with <15ms latency.
+   - Built with TypeScript, Go, Grafana, Docker, and TimescaleDB.
+
+3. CampusLink (Student Knowledge & Peer Collaboration Network)
+   - Collaborative academic platform supporting 12,000+ university students.
+   - Built with React, Node.js, WebSockets, and PostgreSQL.
+
+4. DevSync (Real-Time Pair Programming & Diff Review Platform)
+   - In-browser collaborative IDE with WebRTC peer-to-peer data synchronization.
+   - Built with Vue.js, Tailwind, Rust, and WebRTC. Over 2,500 GitHub Stars.
+
+--------------------------------------------------------------------------------
+NOTABLE ACHIEVEMENTS & AWARDS
+--------------------------------------------------------------------------------
+- 1st Place Overall Champion ($15,000 Grand Prize) - MIT HackNation 2025
+- AWS Certified Solutions Architect - Associate (Validation: SYN-AWS-8849204)
+- Open Source Breakthrough Award - 2,500+ GitHub Stars on DevSync SDK
+- University Undergraduate Research Fellowship ($25,000 AI Research Grant)
+
+--------------------------------------------------------------------------------
+CONTACT & HIRING INQUIRIES
+--------------------------------------------------------------------------------
+We are actively seeking Summer 2026 Software Engineering Internships and client
+development partnerships. Reach out at contact@synapse-collective.dev.
+================================================================================

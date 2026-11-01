@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Studio Gradient -->
+    <radialGradient id="shivStudioBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#2a3b5c"/>
+      <stop offset="55%" stop-color="#141c2e"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+
+    <!-- Skin Tones: Natural South-Asian / Indian warm tone -->
+    <linearGradient id="shivSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d99f77"/>
+      <stop offset="70%" stop-color="#c5885e"/>
+      <stop offset="100%" stop-color="#b07248"/>
+    </linearGradient>
+    <linearGradient id="shivNeckShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9a5f36"/>
+      <stop offset="100%" stop-color="#b87a4f"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="shivHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d221e"/>
+      <stop offset="50%" stop-color="#1c1412"/>
+      <stop offset="100%" stop-color="#0d0908"/>
+    </linearGradient>
+
+    <!-- Suit & Shirt Gradients -->
+    <linearGradient id="shivBlazer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#243048"/>
+      <stop offset="100%" stop-color="#151d2d"/>
+    </linearGradient>
+    <linearGradient id="shivShirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <filter id="shivDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Clip -->
+  <clipPath id="circleClip">
+    <circle cx="200" cy="200" r="195"/>
+  </clipPath>
+
+  <g clip-path="url(#circleClip)">
+    <!-- Studio Background -->
+    <rect width="400" height="400" fill="url(#shivStudioBg)"/>
+
+    <!-- Subtle Rim Light Glow -->
+    <ellipse cx="200" cy="380" rx="160" ry="80" fill="#3b82f6" opacity="0.15"/>
+
+    <!-- Professional Attire: Blazer & Shirt -->
+    <!-- Shoulders / Blazer Base -->
+    <path d="M 60 400 C 65 330, 110 300, 150 290 L 250 290 C 290 300, 335 330, 340 400 Z" fill="url(#shivBlazer)" filter="url(#shivDropShadow)"/>
+
+    <!-- Crisp White Collared Shirt -->
+    <polygon points="160,290 200,380 240,290" fill="url(#shivShirt)"/>
+    <!-- Collar Left -->
+    <polygon points="160,285 200,325 185,280" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <!-- Collar Right -->
+    <polygon points="240,285 200,325 215,280" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Blazer Lapels -->
+    <!-- Left Lapel -->
+    <path d="M 125 310 L 175 390 L 195 390 L 165 305 Z" fill="#1e273a"/>
+    <!-- Right Lapel -->
+    <path d="M 275 310 L 225 390 L 205 390 L 235 305 Z" fill="#1a2233"/>
+
+    <!-- Neck with Natural Anatomy -->
+    <path d="M 172 230 L 172 290 C 172 296, 228 296, 228 290 L 228 230 Z" fill="url(#shivSkin)"/>
+    <!-- Neck shadow under chin -->
+    <path d="M 172 230 C 185 250, 215 250, 228 230 L 228 250 C 215 265, 185 265, 172 250 Z" fill="url(#shivNeckShadow)" opacity="0.6"/>
+
+    <!-- Head / Face (Oval with defined jawline) -->
+    <path d="M 135 155 C 135 85, 265 85, 265 155 C 265 215, 235 245, 200 245 C 165 245, 135 215, 135 155 Z" fill="url(#shivSkin)" filter="url(#shivDropShadow)"/>
+
+    <!-- Ears -->
+    <path d="M 132 150 C 124 150, 124 180, 136 180 Z" fill="#be8158"/>
+    <path d="M 268 150 C 276 150, 276 180, 264 180 Z" fill="#b3764e"/>
+
+    <!-- Modern Styled Hair -->
+    <path d="M 132 145 C 130 95, 155 58, 200 58 C 245 58, 270 95, 268 145 C 260 120, 245 105, 200 105 C 155 105, 140 120, 132 145 Z" fill="url(#shivHair)"/>
+    <path d="M 136 125 C 150 90, 185 75, 225 78 C 255 80, 266 100, 266 125 C 255 105, 230 95, 195 95 C 160 95, 145 110, 136 125 Z" fill="#3d2f2b" opacity="0.6"/>
+
+    <!-- Eyebrows (Defined, confident) -->
+    <path d="M 152 136 Q 168 130 182 135" stroke="#1c1412" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 218 135 Q 232 130 248 136" stroke="#1c1412" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (Professional, expressive) -->
+    <!-- Left Eye -->
+    <path d="M 154 148 Q 168 142 180 148 Q 168 155 154 148 Z" fill="#ffffff"/>
+    <circle cx="167" cy="148" r="5" fill="#2d1f1a"/>
+    <circle cx="168" cy="146" r="1.8" fill="#ffffff"/>
+    <!-- Right Eye -->
+    <path d="M 220 148 Q 232 142 246 148 Q 232 155 220 148 Z" fill="#ffffff"/>
+    <circle cx="233" cy="148" r="5" fill="#2d1f1a"/>
+    <circle cx="234" cy="146" r="1.8" fill="#ffffff"/>
+
+    <!-- Modern Slim Tech Glasses (Stylish & Professional) -->
+    <rect x="146" y="138" width="40" height="22" rx="6" fill="none" stroke="#4f46e5" stroke-width="2.8"/>
+    <rect x="214" y="138" width="40" height="22" rx="6" fill="none" stroke="#4f46e5" stroke-width="2.8"/>
+    <path d="M 186 146 Q 200 142 214 146" stroke="#4f46e5" stroke-width="2.8" fill="none"/>
+    <line x1="146" y1="145" x2="134" y2="148" stroke="#4f46e5" stroke-width="2.5"/>
+    <line x1="254" y1="145" x2="266" y2="148" stroke="#4f46e5" stroke-width="2.5"/>
+
+    <!-- Nose (Refined) -->
+    <path d="M 197 148 L 195 180 Q 200 185 205 180" stroke="#a2683e" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Confident Smile -->
+    <path d="M 182 205 Q 200 218 218 205" stroke="#7a3e1b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 184 206 Q 200 216 216 206" fill="#ffffff" opacity="0.85"/>
+  </g>
+
+  <!-- Border Ring -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#6366f1" stroke-width="6"/>
+</svg>

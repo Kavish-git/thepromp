@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Studio Gradient -->
+    <radialGradient id="harshStudioBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1e3a47"/>
+      <stop offset="55%" stop-color="#0e1f28"/>
+      <stop offset="100%" stop-color="#060c10"/>
+    </radialGradient>
+
+    <!-- Natural Skin Tone -->
+    <linearGradient id="harshSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0a985"/>
+      <stop offset="70%" stop-color="#cb916a"/>
+      <stop offset="100%" stop-color="#b67a53"/>
+    </linearGradient>
+    <linearGradient id="harshNeckShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9e6540"/>
+      <stop offset="100%" stop-color="#bc8058"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="harshHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241a16"/>
+      <stop offset="60%" stop-color="#150f0d"/>
+      <stop offset="100%" stop-color="#0a0706"/>
+    </linearGradient>
+
+    <!-- Suit: Modern Charcoal/Navy -->
+    <linearGradient id="harshSuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <filter id="harshShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <clipPath id="harshClip">
+    <circle cx="200" cy="200" r="195"/>
+  </clipPath>
+
+  <g clip-path="url(#harshClip)">
+    <rect width="400" height="400" fill="url(#harshStudioBg)"/>
+
+    <!-- Subtle Orange / Teal Rim Light -->
+    <ellipse cx="200" cy="380" rx="160" ry="80" fill="#f59e0b" opacity="0.12"/>
+
+    <!-- Tailored Suit Body -->
+    <path d="M 60 400 C 65 330, 110 300, 150 290 L 250 290 C 290 300, 335 330, 340 400 Z" fill="url(#harshSuit)" filter="url(#harshShadow)"/>
+
+    <!-- Collared Shirt (Light Ice Blue) -->
+    <polygon points="160,290 200,380 240,290" fill="#f0f9ff"/>
+    
+    <!-- Modern Slim Navy Tie -->
+    <polygon points="195,310 205,310 210,390 190,390" fill="#0369a1"/>
+    <polygon points="194,305 206,305 203,315 197,315" fill="#0284c7"/>
+
+    <!-- Shirt Collars -->
+    <polygon points="160,285 195,315 185,280" fill="#ffffff" stroke="#bae6fd" stroke-width="1"/>
+    <polygon points="240,285 205,315 215,280" fill="#e0f2fe" stroke="#bae6fd" stroke-width="1"/>
+
+    <!-- Lapels -->
+    <path d="M 125 310 L 175 390 L 195 390 L 165 305 Z" fill="#111827"/>
+    <path d="M 275 310 L 225 390 L 205 390 L 235 305 Z" fill="#0f172a"/>
+
+    <!-- Neck -->
+    <path d="M 172 230 L 172 290 C 172 296, 228 296, 228 290 L 228 230 Z" fill="url(#harshSkin)"/>
+    <path d="M 172 230 C 185 250, 215 250, 228 230 L 228 250 C 215 265, 185 265, 172 250 Z" fill="url(#harshNeckShadow)" opacity="0.65"/>
+
+    <!-- Face (Strong athletic jawline) -->
+    <path d="M 136 155 C 136 85, 264 85, 264 155 C 264 218, 234 246, 200 246 C 166 246, 136 218, 136 155 Z" fill="url(#harshSkin)" filter="url(#harshShadow)"/>
+
+    <!-- Ears -->
+    <path d="M 133 150 C 125 150, 125 180, 137 180 Z" fill="#cb916a"/>
+    <path d="M 267 150 C 275 150, 275 180, 263 180 Z" fill="#bf855f"/>
+
+    <!-- Hair (Clean taper, modern corporate undercut) -->
+    <path d="M 132 145 C 130 92, 155 56, 200 56 C 245 56, 270 92, 268 145 C 262 118, 248 98, 200 98 C 152 98, 138 118, 132 145 Z" fill="url(#harshHair)"/>
+    <path d="M 138 115 C 152 82, 185 70, 222 72 C 252 74, 265 92, 265 115 C 252 96, 230 88, 196 88 C 162 88, 146 102, 138 115 Z" fill="#32241e" opacity="0.55"/>
+
+    <!-- Eyebrows -->
+    <path d="M 152 136 Q 168 132 182 136" stroke="#150f0d" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 218 136 Q 232 132 248 136" stroke="#150f0d" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (Focused, confident) -->
+    <path d="M 154 148 Q 168 142 180 148 Q 168 155 154 148 Z" fill="#ffffff"/>
+    <circle cx="167" cy="148" r="5" fill="#1f1613"/>
+    <circle cx="168" cy="146" r="1.8" fill="#ffffff"/>
+
+    <path d="M 220 148 Q 232 142 246 148 Q 232 155 220 148 Z" fill="#ffffff"/>
+    <circle cx="233" cy="148" r="5" fill="#1f1613"/>
+    <circle cx="234" cy="146" r="1.8" fill="#ffffff"/>
+
+    <!-- Nose -->
+    <path d="M 197 148 L 195 180 Q 200 185 205 180" stroke="#a66e47" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Confident Professional Smile -->
+    <path d="M 182 205 Q 200 218 218 205" stroke="#7e4321" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 184 206 Q 200 216 216 206" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Border Ring -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#f59e0b" stroke-width="6"/>
+</svg>

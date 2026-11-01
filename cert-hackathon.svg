@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Certificate Border -->
+  <rect width="800" height="550" rx="16" fill="url(#certBg)" stroke="#f59e0b" stroke-width="4" />
+  <rect x="20" y="20" width="760" height="510" rx="10" fill="none" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5" stroke-dasharray="8,4" />
+
+  <!-- Corner Ornaments -->
+  <circle cx="45" cy="45" r="12" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <circle cx="755" cy="45" r="12" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <circle cx="45" cy="505" r="12" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <circle cx="755" cy="505" r="12" fill="none" stroke="#f59e0b" stroke-width="2" />
+
+  <!-- Header -->
+  <text x="400" y="90" font-family="'Georgia', serif" font-size="28" font-weight="bold" fill="#fbbf24" text-anchor="middle" letter-spacing="4">CERTIFICATE OF EXCELLENCE</text>
+  <text x="400" y="125" font-family="'Arial', sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle" letter-spacing="2">MIT HACKNATION 2025 • GLOBAL COLLEGIATE HACKATHON</text>
+
+  <!-- Divider -->
+  <line x1="250" y1="145" x2="550" y2="145" stroke="url(#goldRibbon)" stroke-width="2" />
+
+  <!-- Recipient text -->
+  <text x="400" y="190" font-family="'Arial', sans-serif" font-size="15" fill="#cbd5e1" text-anchor="middle">This prestigious award is proudly presented to</text>
+  
+  <text x="400" y="245" font-family="'Georgia', serif" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">SYNAPSE COLLECTIVE</text>
+  <text x="400" y="275" font-family="'Courier New', monospace" font-size="13" fill="#38bdf8" text-anchor="middle">(Shivansh, Harsh, Riya, Shristi)</text>
+
+  <!-- Award Details -->
+  <text x="400" y="325" font-family="'Arial', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="middle">
+    For winning <tspan fill="#fbbf24" font-weight="bold">FIRST PLACE OVERALL (GRAND PRIZE)</tspan>
+  </text>
+  <text x="400" y="355" font-family="'Arial', sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">
+    for developing "NeuroFlow", an autonomous edge AI multi-agent orchestration pipeline.
+  </text>
+
+  <!-- Gold Seal -->
+  <g transform="translate(140, 410)">
+    <circle cx="40" cy="40" r="36" fill="url(#goldRibbon)" />
+    <circle cx="40" cy="40" r="30" fill="#0f172a" />
+    <text x="40" y="44" font-family="'Arial', sans-serif" font-size="20" fill="#fbbf24" text-anchor="middle">★ 1ST ★</text>
+    <text x="40" y="90" font-family="'Courier New', monospace" font-size="10" fill="#fbbf24" text-anchor="middle">OFFICIAL SEAL</text>
+  </g>
+
+  <!-- Signatures -->
+  <g transform="translate(480, 420)">
+    <path d="M 0 30 Q 30 10 60 25 T 120 15 T 180 30" stroke="#38bdf8" stroke-width="2" fill="none" />
+    <line x1="0" y1="40" x2="200" y2="40" stroke="#64748b" stroke-width="1" />
+    <text x="100" y="58" font-family="'Arial', sans-serif" font-size="12" fill="#f8fafc" text-anchor="middle">Dr. Sarah Jenkins, Ph.D.</text>
+    <text x="100" y="74" font-family="'Arial', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Lead Judge, MIT HackNation Committee</text>
+  </g>
+
+  <!-- Sample label watermark -->
+  <rect x="250" y="490" width="300" height="24" rx="12" fill="rgba(245, 158, 11, 0.15)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="400" y="506" font-family="'Courier New', monospace" font-size="11" fill="#fbbf24" text-anchor="middle">FICTIONAL SAMPLE CREDENTIAL FOR PORTFOLIO DEMO</text>
+</svg>

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Studio Gradient -->
+    <radialGradient id="shristiStudioBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#133529"/>
+      <stop offset="55%" stop-color="#091d16"/>
+      <stop offset="100%" stop-color="#040d0a"/>
+    </radialGradient>
+
+    <!-- Natural Skin Tone -->
+    <linearGradient id="shristiSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e4ae89"/>
+      <stop offset="70%" stop-color="#cf9670"/>
+      <stop offset="100%" stop-color="#b87d57"/>
+    </linearGradient>
+    <linearGradient id="shristiNeckShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9f6643"/>
+      <stop offset="100%" stop-color="#bf825a"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="shristiHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#261a17"/>
+      <stop offset="60%" stop-color="#160e0c"/>
+      <stop offset="100%" stop-color="#080504"/>
+    </linearGradient>
+
+    <!-- Tailored Blazer (Emerald / Deep Spruce Corporate) -->
+    <linearGradient id="shristiBlazer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+
+    <filter id="shristiShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <clipPath id="shristiClip">
+    <circle cx="200" cy="200" r="195"/>
+  </clipPath>
+
+  <g clip-path="url(#shristiClip)">
+    <rect width="400" height="400" fill="url(#shristiStudioBg)"/>
+
+    <!-- Subtle Emerald Rim Light -->
+    <ellipse cx="200" cy="380" rx="160" ry="80" fill="#10b981" opacity="0.15"/>
+
+    <!-- Hair Back Volume -->
+    <path d="M 120 160 C 105 240, 115 310, 135 340 L 265 340 C 285 310, 295 240, 280 160 Z" fill="url(#shristiHair)"/>
+
+    <!-- Professional Blazer Body -->
+    <path d="M 60 400 C 65 330, 110 300, 150 290 L 250 290 C 290 300, 335 330, 340 400 Z" fill="url(#shristiBlazer)" filter="url(#shristiShadow)"/>
+
+    <!-- Inner Charcoal/Black Silk Top -->
+    <path d="M 165 290 Q 200 360 235 290 Z" fill="#18181b"/>
+
+    <!-- Blazer Lapels -->
+    <path d="M 125 310 L 180 395 L 195 395 L 165 305 Z" fill="#044e3b"/>
+    <path d="M 275 310 L 220 395 L 205 395 L 235 305 Z" fill="#033d2e"/>
+
+    <!-- Neck -->
+    <path d="M 174 225 L 174 290 C 174 296, 226 296, 226 290 L 226 225 Z" fill="url(#shristiSkin)"/>
+    <path d="M 174 225 C 185 248, 215 248, 226 225 L 226 248 C 215 264, 185 264, 174 248 Z" fill="url(#shristiNeckShadow)" opacity="0.6"/>
+
+    <!-- Face (Graceful, confident, friendly) -->
+    <path d="M 140 155 C 140 88, 260 88, 260 155 C 260 216, 232 244, 200 244 C 168 244, 140 216, 140 155 Z" fill="url(#shristiSkin)" filter="url(#shristiShadow)"/>
+
+    <!-- Subtle Cheek Blush -->
+    <circle cx="162" cy="180" r="14" fill="#f43f5e" opacity="0.1"/>
+    <circle cx="238" cy="180" r="14" fill="#f43f5e" opacity="0.1"/>
+
+    <!-- Ears -->
+    <path d="M 137 150 C 131 150, 131 180, 141 180 Z" fill="#cf9670"/>
+    <path d="M 263 150 C 269 150, 269 180, 259 180 Z" fill="#c48a63"/>
+
+    <!-- Modern Minimalist Gold Stud Earring -->
+    <circle cx="135" cy="178" r="3.2" fill="#fbbf24"/>
+    <circle cx="265" cy="178" r="3.2" fill="#fbbf24"/>
+
+    <!-- Modern Bob / Shoulder Length Styled Hair Front -->
+    <path d="M 135 140 C 132 85, 160 52, 200 52 C 245 52, 268 85, 265 140 C 260 108, 240 80, 195 80 C 155 80, 140 108, 135 140 Z" fill="url(#shristiHair)"/>
+    <!-- Left hair strand -->
+    <path d="M 136 125 C 130 180, 142 225, 150 240 C 145 205, 140 165, 146 130 Z" fill="#160e0c"/>
+    <!-- Right hair strand -->
+    <path d="M 264 125 C 270 180, 258 225, 250 240 C 255 205, 260 165, 254 130 Z" fill="#160e0c"/>
+
+    <!-- Eyebrows (Defined, friendly) -->
+    <path d="M 154 136 Q 168 130 182 135" stroke="#160e0c" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 218 135 Q 232 130 246 136" stroke="#160e0c" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (Expressive, warm) -->
+    <path d="M 154 148 Q 168 141 181 148 Q 168 156 154 148 Z" fill="#ffffff"/>
+    <circle cx="168" cy="148" r="5" fill="#1b120f"/>
+    <circle cx="169" cy="146" r="1.8" fill="#ffffff"/>
+    <path d="M 152 147 Q 168 140 182 147" stroke="#160e0c" stroke-width="2" fill="none"/>
+
+    <path d="M 219 148 Q 232 141 246 148 Q 232 156 219 148 Z" fill="#ffffff"/>
+    <circle cx="232" cy="148" r="5" fill="#1b120f"/>
+    <circle cx="233" cy="146" r="1.8" fill="#ffffff"/>
+    <path d="M 218 147 Q 232 140 248 147" stroke="#160e0c" stroke-width="2" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M 198 148 L 196 179 Q 200 184 204 179" stroke="#ac744d" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Warm Engaging Smile -->
+    <path d="M 183 204 Q 200 216 217 204" stroke="#993b48" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M 185 205 Q 200 214 215 205" fill="#ffffff" opacity="0.95"/>
+  </g>
+
+  <!-- Border Ring -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#10b981" stroke-width="6"/>
+</svg>

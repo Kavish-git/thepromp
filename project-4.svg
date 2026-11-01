@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180c2e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#p4Bg)"/>
+
+  <!-- Collaborative Code Review Interface -->
+  <g transform="translate(35, 30)">
+    <rect width="530" height="320" rx="14" fill="#0f172a" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1.5"/>
+
+    <!-- Header bar with peer cursors indicator -->
+    <rect x="0" y="0" width="530" height="42" rx="14" fill="#1e1b4b"/>
+    <circle cx="20" cy="21" r="5" fill="#ec4899"/>
+    <circle cx="35" cy="21" r="5" fill="#8b5cf6"/>
+    <circle cx="50" cy="21" r="5" fill="#06b6d4"/>
+    <text x="75" y="25" font-family="'Courier New', monospace" font-size="12" fill="#e2e8f0">DevSync • PR #104 Review (3 Peers Connected)</text>
+
+    <!-- Split Diff View -->
+    <g transform="translate(20, 60)" font-family="'Courier New', monospace" font-size="11">
+      <!-- Line 1 Removed -->
+      <rect x="0" y="0" width="490" height="24" fill="rgba(239, 68, 68, 0.15)"/>
+      <text x="10" y="16" fill="#ef4444">- const syncLatency = computeSlowPolling(data);</text>
+
+      <!-- Line 2 Added -->
+      <rect x="0" y="28" width="490" height="24" fill="rgba(34, 197, 94, 0.15)"/>
+      <text x="10" y="44" fill="#22c55e">+ const syncLatency = await WebRTCDataChannel.broadcast(data);</text>
+
+      <!-- Line 3 Unchanged -->
+      <rect x="0" y="56" width="490" height="24" fill="transparent"/>
+      <text x="10" y="72" fill="#94a3b8">  return { ok: true, streamId, rtt: "4ms" };</text>
+
+      <!-- Floating Peer Cursor 1: Riya -->
+      <g transform="translate(260, 40)">
+        <polygon points="0,0 12,8 7,10 9,16 6,17 4,11 0,13" fill="#ec4899"/>
+        <rect x="12" y="4" width="75" height="18" rx="4" fill="#ec4899"/>
+        <text x="16" y="17" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="bold">Riya</text>
+      </g>
+
+      <!-- Inline Peer Comment Box -->
+      <g transform="translate(20, 100)">
+        <rect width="450" height="60" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.2"/>
+        <circle cx="20" cy="20" r="10" fill="#8b5cf6"/>
+        <text x="20" y="24" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">SS</text>
+        <text x="38" y="19" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#f8fafc">Shivansh</text>
+        <text x="120" y="19" font-family="Arial, sans-serif" font-size="10" fill="#64748b">2 mins ago</text>
+        <text x="38" y="38" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">"Great refactor to zero-copy data channels! Benchmarks show a 10x throughput gain."</text>
+      </g>
+
+      <!-- Action buttons -->
+      <g transform="translate(20, 185)">
+        <rect width="110" height="30" rx="6" fill="#10b981"/>
+        <text x="55" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Approve PR</text>
+
+        <rect x="120" y="0" width="130" height="30" rx="6" fill="#334155"/>
+        <text x="185" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#f8fafc" text-anchor="middle">Request Changes</text>
+      </g>
+    </g>
+  </g>
+</svg>

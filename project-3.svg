@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#p3Bg)"/>
+
+  <!-- University Peer Collaboration UI Concept -->
+  <g transform="translate(40, 35)">
+    <!-- Main Shell -->
+    <rect width="520" height="310" rx="16" fill="url(#cardGrad)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5"/>
+
+    <!-- Left Sidebar: Channels & Peer Groups -->
+    <rect x="0" y="0" width="140" height="310" rx="16" fill="#0f172a"/>
+    <text x="20" y="32" font-family="Arial, sans-serif" font-weight="bold" font-size="13" fill="#34d399">🎓 CampusLink</text>
+    
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="10" fill="#64748b" font-weight="bold">STUDY CLUSTERS</text>
+    
+    <rect x="12" y="78" width="116" height="28" rx="6" fill="#1e293b"/>
+    <text x="24" y="96" font-family="Arial, sans-serif" font-size="11" fill="#f8fafc"># cs-algorithms</text>
+
+    <text x="24" y="126" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8"># ai-research-lab</text>
+    <text x="24" y="154" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8"># hackathon-prep</text>
+    <text x="24" y="182" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8"># cloud-sys-eng</text>
+
+    <!-- Center Feed: Shared Resources -->
+    <g transform="translate(155, 20)">
+      <text x="10" y="18" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#f8fafc">Shared Knowledge &amp; Code Repository</text>
+      
+      <!-- Resource Card 1 -->
+      <g transform="translate(10, 35)">
+        <rect width="335" height="68" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+        <circle cx="28" cy="34" r="14" fill="#10b981" opacity="0.2"/>
+        <text x="28" y="39" font-family="Arial, sans-serif" font-size="14" fill="#34d399" text-anchor="middle">📄</text>
+        <text x="52" y="28" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#f8fafc">Distributed Systems Exam Review</text>
+        <text x="52" y="44" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Shared by Shivansh • 420 stars • 38 comments</text>
+        <rect x="52" y="50" width="45" height="12" rx="3" fill="#065f46"/>
+        <text x="74" y="59" font-family="Arial, sans-serif" font-size="8" fill="#a7f3d0" text-anchor="middle">Verified</text>
+      </g>
+
+      <!-- Resource Card 2 -->
+      <g transform="translate(10, 115)">
+        <rect width="335" height="68" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+        <circle cx="28" cy="34" r="14" fill="#3b82f6" opacity="0.2"/>
+        <text x="28" y="39" font-family="Arial, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle">💻</text>
+        <text x="52" y="28" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#f8fafc">Interactive Graph Algorithms Simulator</text>
+        <text x="52" y="44" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Interactive WebAssembly Visualizer • 1.2k views</text>
+        <rect x="52" y="50" width="55" height="12" rx="3" fill="#1e3a8a"/>
+        <text x="79" y="59" font-family="Arial, sans-serif" font-size="8" fill="#bfdbfe" text-anchor="middle">Interactive</text>
+      </g>
+
+      <!-- Peer Live Pulse Banner -->
+      <g transform="translate(10, 195)">
+        <rect width="335" height="60" rx="8" fill="#042f2e" stroke="#14b8a6"/>
+        <circle cx="25" cy="30" r="5" fill="#2dd4bf"/>
+        <text x="40" y="26" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#ccfbf1">Active Study Group in Progress</text>
+        <text x="40" y="44" font-family="Arial, sans-serif" font-size="10" fill="#99f6e4">16 student peers live in audio/screen share room</text>
+      </g>
+    </g>
+  </g>
+</svg>

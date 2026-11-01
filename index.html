@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0f1d" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Synapse Collective | Student Software Engineering & AI Team</title>
+  <meta name="description" content="Portfolio of Synapse Collective, an elite collegiate student software engineering team specializing in full-stack web applications, distributed cloud systems, and autonomous AI agents." />
+  <meta name="keywords" content="Software Engineering, Student Portfolio, AI Agents, Full-Stack Development, React, Next.js, Python, FastAPI, Cloud Systems" />
+  <meta name="author" content="Synapse Collective" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip Navigation for Accessibility -->
+  <a href="#about" class="skip-link">Skip to main content</a>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Synapse Collective Home">
+        <span class="logo-symbol">
+          <i class="fa-solid fa-brain"></i>
+        </span>
+        <span class="logo-text">SYNAPSE<span class="logo-dot">.</span>DEV</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link cta-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Switcher & Mobile Toggle) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon theme-icon moon-icon"></i>
+          <i class="fa-solid fa-sun theme-icon sun-icon"></i>
+        </button>
+
+        <!-- Download CV Shortcut Button -->
+        <button id="nav-download-cv" class="btn btn-outline btn-sm nav-cv-btn" title="Download Team Resume / Pitch">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Team CV</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="mobile-menu-drawer" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <div class="mobile-menu-header">
+          <div class="brand-logo">
+            <span class="logo-symbol"><i class="fa-solid fa-brain"></i></span>
+            <span class="logo-text">SYNAPSE<span class="logo-dot">.</span>DEV</span>
+          </div>
+          <button id="mobile-close" class="mobile-close-btn" aria-label="Close Navigation Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user-group"></i> About Us</a></li>
+          <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-code"></i> Skills &amp; Stack</a></li>
+          <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li><a href="#team" class="mobile-nav-link"><i class="fa-solid fa-users"></i> Core Team</a></li>
+          <li><a href="#achievements" class="mobile-nav-link"><i class="fa-solid fa-award"></i> Achievements</a></li>
+          <li><a href="#contact" class="mobile-nav-link mobile-cta-link"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <button id="mobile-download-cv" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-download"></i> Download Team Profile (PDF/CV)
+          </button>
+          <div class="mobile-socials">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Student Engineering Collective • Available for Internships &amp; Contracts</span>
+          </div>
+
+          <!-- Hero Heading -->
+          <h1 class="hero-title">
+            Engineering Next-Gen <span class="gradient-text">Full-Stack &amp; AI</span> Applications
+          </h1>
+
+          <!-- Tagline & Description -->
+          <p class="hero-description">
+            We are <strong>Synapse Collective</strong>, a passionate collegiate development team from UC Berkeley, Stanford, and MIT. We build high-throughput distributed systems, modern reactive web platforms, and production-ready autonomous AI agents.
+          </p>
+
+          <!-- Metrics summary line -->
+          <div class="hero-quick-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-trophy highlight-icon gold"></i>
+              <span>1st Place MIT HackNation 2025</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-box-open highlight-icon cyan"></i>
+              <span>18+ Production Projects Shipped</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-shield-halved highlight-icon green"></i>
+              <span>AWS Certified Architecture</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-handshake"></i> Collaborate / Hire Us
+            </a>
+            <button id="hero-download-cv" class="btn btn-ghost btn-lg" title="Download CV">
+              <i class="fa-solid fa-arrow-down-to-bracket"></i> Download CV
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Visual Element -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-visual-card">
+            <img src="./images/hero-visual.svg"
+                 onerror="this.onerror=null; this.src='./assets/hero-visual.svg'; this.onerror=function(){this.src='hero-visual.svg';};"
+                 alt="Synapse Collective software architecture, AI agent ecosystem, and responsive cloud applications diagram"
+                 class="hero-illustration"
+                 width="600"
+                 height="500"
+                 loading="eager"
+                 decoding="async" />
+            <!-- Floating interactive micro-card 1 -->
+            <div class="floating-stat-card card-top-left">
+              <div class="stat-icon-wrap bg-primary-glow">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="stat-text">
+                <span class="stat-value">14ms</span>
+                <span class="stat-label">Avg System Latency</span>
+              </div>
+            </div>
+
+            <!-- Floating interactive micro-card 2 -->
+            <div class="floating-stat-card card-bottom-right">
+              <div class="stat-icon-wrap bg-green-glow">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="stat-text">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Test-Driven Quality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS COUNTER STRIP -->
+    <section class="stats-section" aria-label="Key Performance Statistics">
+      <div class="container stats-grid">
+        <div class="stat-box">
+          <div class="stat-number" data-target="18">0</div>
+          <div class="stat-plus">+</div>
+          <p class="stat-title">Shipped Projects</p>
+          <span class="stat-desc">Full-stack &amp; open source apps</span>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-plus">x</div>
+          <p class="stat-title">Hackathon Grand Titles</p>
+          <span class="stat-desc">MIT, CalHacks &amp; Stanford</span>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-target="85">0</div>
+          <div class="stat-plus">k+</div>
+          <p class="stat-title">Active Platform Users</p>
+          <span class="stat-desc">Across student &amp; client products</span>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-target="99">0</div>
+          <div class="stat-plus">.9%</div>
+          <p class="stat-title">Cloud Reliability</p>
+          <span class="stat-desc">Engineered for production scale</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">WHO WE ARE</span>
+          <h2 class="section-title">Driven by Curiosity, Engineered for Impact</h2>
+          <p class="section-subtitle">
+            We are a collegiate software studio bridging theoretical computer science with real-world, industry-standard engineering.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- About Narrative -->
+          <div class="about-narrative-card">
+            <h3 class="about-card-heading">
+              <i class="fa-solid fa-graduation-cap highlight-color"></i>
+              Our Student Background &amp; Mission
+            </h3>
+            <p>
+              Founded in 2024 by four university computer science students from UC Berkeley, Stanford, and Carnegie Mellon, <strong>Synapse Collective</strong> was born out of 48-hour competitive hackathons and a shared obsession with high-performance software craft.
+            </p>
+            <p>
+              Instead of building toy projects, we engineer <strong>production-grade web applications, autonomous AI agent pipelines, and distributed cloud services</strong> that solve actual bottlenecks for researchers, startups, and university communities.
+            </p>
+
+            <div class="about-focus-tags">
+              <span class="focus-pill"><i class="fa-solid fa-layer-group"></i> Full-Stack Architecture</span>
+              <span class="focus-pill"><i class="fa-solid fa-robot"></i> Generative AI &amp; LLM Tooling</span>
+              <span class="focus-pill"><i class="fa-solid fa-cloud"></i> High-Availability Cloud Infrastructure</span>
+              <span class="focus-pill"><i class="fa-solid fa-universal-access"></i> Accessible, Fast UX</span>
+            </div>
+
+            <!-- Download Team Pitch / CV Button -->
+            <div class="about-cta-row">
+              <button class="btn btn-primary download-cv-trigger">
+                <i class="fa-solid fa-file-pdf"></i> Download Official Team CV
+              </button>
+              <a href="#team" class="btn btn-ghost">
+                Meet the Team Members <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- About Pillars / Values -->
+          <div class="about-values-cards">
+            <div class="value-card">
+              <div class="value-icon bg-indigo">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <div class="value-content">
+                <h4>Blazing Performance &amp; Clean Code</h4>
+                <p>We write modular, strongly-typed TypeScript and Python codebases backed by unit and integration tests with strict CI/CD gates.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon bg-cyan">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="value-content">
+                <h4>Cutting-Edge AI Integration</h4>
+                <p>From retrieval-augmented generation (RAG) to autonomous multi-agent tool loops, we leverage modern LLMs to automate complex workflows.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon bg-emerald">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div class="value-content">
+                <h4>Fast Collaborative Iteration</h4>
+                <p>Agile sprints, rigorous code reviews, automated linting, and rapid deployment cycles ensure we deliver measurable value every week.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TECHNOLOGIES SECTION -->
+    <section class="skills-section section-padding bg-alt" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Sensibly grouped into core domains with real production proficiency and animated metrics.
+          </p>
+        </div>
+
+        <!-- Skill Category Filter Tabs -->
+        <div class="skills-filter-container">
+          <div class="filter-tabs" role="tablist" aria-label="Skills Category Filter">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Domains</button>
+            <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend &amp; UI</button>
+            <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend &amp; Data</button>
+            <button class="filter-btn" data-filter="devops" role="tab" aria-selected="false">Cloud &amp; DevOps</button>
+            <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; Machine Learning</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-domain-grid">
+
+          <!-- 1. Frontend & UI Domain -->
+          <div class="skill-category-card" data-domain="frontend">
+            <div class="category-header">
+              <div class="cat-icon cat-frontend"><i class="fa-solid fa-desktop"></i></div>
+              <div class="cat-meta">
+                <h3 class="cat-title">Frontend &amp; Reactive UI</h3>
+                <span class="cat-subtitle">Design systems &amp; responsive client apps</span>
+              </div>
+            </div>
+
+            <!-- Skills List with Progress Bars -->
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-brands fa-react tech-icon react-color"></i> React / Next.js (App Router)</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="95" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-code tech-icon ts-color"></i> TypeScript &amp; Modern ES6+</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="92" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-brands fa-css3-alt tech-icon tailwind-color"></i> Tailwind CSS &amp; UI Systems</span>
+                  <span class="skill-percentage">94%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="94" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-network-wired tech-icon socket-color"></i> WebSockets &amp; WebRTC Realtime</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="88" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges List -->
+            <div class="skill-badges-strip">
+              <span class="badge"><i class="fa-brands fa-vuejs"></i> Vue 3</span>
+              <span class="badge"><i class="fa-brands fa-html5"></i> HTML5/CSS3</span>
+              <span class="badge"><i class="fa-brands fa-figma"></i> Figma</span>
+              <span class="badge"><i class="fa-solid fa-universal-access"></i> WCAG a11y</span>
+            </div>
+          </div>
+
+          <!-- 2. Backend & Databases Domain -->
+          <div class="skill-category-card" data-domain="backend">
+            <div class="category-header">
+              <div class="cat-icon cat-backend"><i class="fa-solid fa-server"></i></div>
+              <div class="cat-meta">
+                <h3 class="cat-title">Backend &amp; High-Throughput APIs</h3>
+                <span class="cat-subtitle">Microservices, caching &amp; relational DBs</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-brands fa-node tech-icon node-color"></i> Node.js &amp; Express Engine</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="90" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-brands fa-python tech-icon python-color"></i> Python &amp; FastAPI Async</span>
+                  <span class="skill-percentage">94%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="94" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-database tech-icon pg-color"></i> PostgreSQL &amp; Prisma ORM</span>
+                  <span class="skill-percentage">89%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="89" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-bolt tech-icon redis-color"></i> Redis In-Memory &amp; PubSub</span>
+                  <span class="skill-percentage">86%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="86" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-badges-strip">
+              <span class="badge"><i class="fa-brands fa-golang"></i> Go (Golang)</span>
+              <span class="badge"><i class="fa-solid fa-circle-nodes"></i> GraphQL</span>
+              <span class="badge"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+              <span class="badge"><i class="fa-solid fa-lock"></i> JWT / OAuth2</span>
+            </div>
+          </div>
+
+          <!-- 3. Cloud & DevOps Domain -->
+          <div class="skill-category-card" data-domain="devops">
+            <div class="category-header">
+              <div class="cat-icon cat-devops"><i class="fa-solid fa-cloud"></i></div>
+              <div class="cat-meta">
+                <h3 class="cat-title">Cloud Infrastructure &amp; DevOps</h3>
+                <span class="cat-subtitle">Containers, automated CI/CD &amp; scaling</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-brands fa-docker tech-icon docker-color"></i> Docker &amp; Multi-Stage Builds</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="92" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-brands fa-aws tech-icon aws-color"></i> AWS Cloud (ECS, S3, RDS, Lambda)</span>
+                  <span class="skill-percentage">87%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="87" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-dharmachakra tech-icon k8s-color"></i> Kubernetes (k8s) &amp; Helm</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="82" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-brands fa-github tech-icon git-color"></i> GitHub Actions &amp; Automated CI/CD</span>
+                  <span class="skill-percentage">91%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="91" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-badges-strip">
+              <span class="badge"><i class="fa-solid fa-cubes"></i> Terraform</span>
+              <span class="badge"><i class="fa-solid fa-chart-line"></i> Prometheus</span>
+              <span class="badge"><i class="fa-brands fa-linux"></i> Linux Admin</span>
+              <span class="badge"><i class="fa-brands fa-git-alt"></i> Git Flow</span>
+            </div>
+          </div>
+
+          <!-- 4. AI & Machine Learning Domain -->
+          <div class="skill-category-card" data-domain="ai">
+            <div class="category-header">
+              <div class="cat-icon cat-ai"><i class="fa-solid fa-brain"></i></div>
+              <div class="cat-meta">
+                <h3 class="cat-title">AI Agents &amp; Data Intelligence</h3>
+                <span class="cat-subtitle">RAG pipelines, LLM tools &amp; embeddings</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-link tech-icon lang-color"></i> LangChain &amp; Multi-Agent Graphs</span>
+                  <span class="skill-percentage">93%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="93" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-fire tech-icon torch-color"></i> PyTorch &amp; Deep Learning Models</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="85" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-vector-square tech-icon vector-color"></i> Vector DBs (Pinecone, ChromaDB)</span>
+                  <span class="skill-percentage">89%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="89" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label-row">
+                  <span class="skill-name"><i class="fa-solid fa-wand-magic-sparkles tech-icon openai-color"></i> OpenAI, Anthropic &amp; Gemini APIs</span>
+                  <span class="skill-percentage">96%</span>
+                </div>
+                <div class="skill-progress-track">
+                  <div class="skill-progress-bar" data-progress="96" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-badges-strip">
+              <span class="badge"><i class="fa-solid fa-table"></i> Pandas / NumPy</span>
+              <span class="badge"><i class="fa-solid fa-comment-dots"></i> Prompt Eng.</span>
+              <span class="badge"><i class="fa-solid fa-robot"></i> RAG Pipelines</span>
+              <span class="badge"><i class="fa-solid fa-shapes"></i> Scikit-Learn</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">PROVEN CAPABILITIES</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Explore our real-world, open-source and hackathon-winning software applications.
+          </p>
+        </div>
+
+        <!-- Project Category Filter -->
+        <div class="project-filter-bar">
+          <div class="project-filters" role="tablist" aria-label="Project Filter Tabs">
+            <button class="proj-filter-btn active" data-filter="all">All Projects (4)</button>
+            <button class="proj-filter-btn" data-filter="ai">AI &amp; LLMs</button>
+            <button class="proj-filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
+            <button class="proj-filter-btn" data-filter="fullstack">Full-Stack Web</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+
+          <!-- PROJECT 1: NeuroFlow -->
+          <article class="project-card" data-category="ai fullstack">
+            <div class="project-thumb-wrap">
+              <img src="./images/project-1.svg"
+                   onerror="this.onerror=null; this.src='./assets/project-1.svg'; this.onerror=function(){this.src='project-1.svg';};"
+                   alt="NeuroFlow - Autonomous multi-agent workflow orchestration system architecture diagram showing DAG execution and real-time state recovery"
+                   class="project-img"
+                   width="600"
+                   height="380"
+                   loading="lazy"
+                   decoding="async" />
+              <div class="project-badges-overlay">
+                <span class="badge badge-winner"><i class="fa-solid fa-trophy"></i> 1st Prize MIT HackNation</span>
+                <span class="badge badge-tag">AI Agent Engine</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <h3 class="project-title">NeuroFlow</h3>
+                <span class="project-stars"><i class="fa-brands fa-github"></i> 1.4k Stars</span>
+              </div>
+              <p class="project-desc">
+                An autonomous multi-agent workflow orchestration engine that breaks down high-level business goals into directed acyclic graphs (DAGs), executing parallel tool calls with real-time streaming state recovery.
+              </p>
+
+              <!-- Tech stack tags -->
+              <div class="project-tech-stack">
+                <span class="tech-pill">Next.js 14</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">LangChain</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">Pinecone</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-demo-modal" data-project="neuroflow">
+                  <i class="fa-solid fa-play"></i> Interactive Demo
+                </button>
+                <button class="btn btn-outline btn-sm open-case-modal" data-project="neuroflow">
+                  <i class="fa-solid fa-file-code"></i> Case Study
+                </button>
+                <a href="https://github.com/langchain-ai/langgraph" target="_blank" rel="noopener noreferrer" class="github-code-link" aria-label="NeuroFlow GitHub Repository" title="Inspect Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i> <span>GitHub Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: CloudPulse -->
+          <article class="project-card" data-category="cloud">
+            <div class="project-thumb-wrap">
+              <img src="./images/project-2.svg"
+                   onerror="this.onerror=null; this.src='./assets/project-2.svg'; this.onerror=function(){this.src='project-2.svg';};"
+                   alt="CloudPulse - Distributed Kubernetes observability, telemetry metrics, and eBPF network trace monitoring dashboard preview"
+                   class="project-img"
+                   width="600"
+                   height="380"
+                   loading="lazy"
+                   decoding="async" />
+              <div class="project-badges-overlay">
+                <span class="badge badge-info"><i class="fa-solid fa-cloud"></i> High-Throughput</span>
+                <span class="badge badge-tag">DevOps &amp; Infra</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <h3 class="project-title">CloudPulse</h3>
+                <span class="project-stars"><i class="fa-solid fa-circle-check"></i> 99.98% Uptime</span>
+              </div>
+              <p class="project-desc">
+                A distributed real-time telemetry and metrics observability dashboard built for Kubernetes clusters, capable of ingesting over 48,000 events/second with sub-15ms aggregation latency and automated anomaly detection.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Go (Golang)</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Kubernetes</span>
+                <span class="tech-pill">TimescaleDB</span>
+                <span class="tech-pill">Grafana</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-demo-modal" data-project="cloudpulse">
+                  <i class="fa-solid fa-chart-line"></i> Live Metrics
+                </button>
+                <button class="btn btn-outline btn-sm open-case-modal" data-project="cloudpulse">
+                  <i class="fa-solid fa-file-code"></i> Case Study
+                </button>
+                <a href="https://github.com/open-telemetry/opentelemetry-collector" target="_blank" rel="noopener noreferrer" class="github-code-link" aria-label="CloudPulse GitHub Repository" title="Inspect Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i> <span>GitHub Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: CampusLink -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-thumb-wrap">
+              <img src="./images/project-3.svg"
+                   onerror="this.onerror=null; this.src='./assets/project-3.svg'; this.onerror=function(){this.src='project-3.svg';};"
+                   alt="CampusLink - Collegiate peer-to-peer academic collaboration and real-time study workspace platform interface"
+                   class="project-img"
+                   width="600"
+                   height="380"
+                   loading="lazy"
+                   decoding="async" />
+              <div class="project-badges-overlay">
+                <span class="badge badge-success"><i class="fa-solid fa-users"></i> 12,000+ Students</span>
+                <span class="badge badge-tag">Full-Stack App</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <h3 class="project-title">CampusLink</h3>
+                <span class="project-stars"><i class="fa-solid fa-graduation-cap"></i> 4 Universities</span>
+              </div>
+              <p class="project-desc">
+                A peer-to-peer collegiate knowledge exchange platform connecting university engineering students with study rooms, verified course repositories, interactive algorithm visualizers, and real-time audio rooms.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">WebSockets</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">Prisma</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-demo-modal" data-project="campuslink">
+                  <i class="fa-solid fa-play"></i> Interactive Demo
+                </button>
+                <button class="btn btn-outline btn-sm open-case-modal" data-project="campuslink">
+                  <i class="fa-solid fa-file-code"></i> Case Study
+                </button>
+                <a href="https://github.com/RocketChat/Rocket.Chat" target="_blank" rel="noopener noreferrer" class="github-code-link" aria-label="CampusLink GitHub Repository" title="Inspect Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i> <span>GitHub Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: DevSync -->
+          <article class="project-card" data-category="fullstack cloud">
+            <div class="project-thumb-wrap">
+              <img src="./images/project-4.svg"
+                   onerror="this.onerror=null; this.src='./assets/project-4.svg'; this.onerror=function(){this.src='project-4.svg';};"
+                   alt="DevSync - Sub-50ms peer-to-peer collaborative code editor and real-time pair programming interface"
+                   class="project-img"
+                   width="600"
+                   height="380"
+                   loading="lazy"
+                   decoding="async" />
+              <div class="project-badges-overlay">
+                <span class="badge badge-featured"><i class="fa-solid fa-star"></i> Open Source Gem</span>
+                <span class="badge badge-tag">WebRTC &amp; IDE</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <h3 class="project-title">DevSync</h3>
+                <span class="project-stars"><i class="fa-brands fa-github"></i> 2.5k Stars</span>
+              </div>
+              <p class="project-desc">
+                An ultra-low latency pair programming and real-time pull request review suite with zero-server peer-to-peer data channels, syntax tree diffing, and integrated collaborative audio calls via WebRTC.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Vue 3</span>
+                <span class="tech-pill">WebRTC</span>
+                <span class="tech-pill">Rust Backend</span>
+                <span class="tech-pill">CRDT Sync</span>
+                <span class="tech-pill">Tailwind</span>
+                <span class="tech-pill">Docker</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-demo-modal" data-project="devsync">
+                  <i class="fa-solid fa-play"></i> Interactive Demo
+                </button>
+                <button class="btn btn-outline btn-sm open-case-modal" data-project="devsync">
+                  <i class="fa-solid fa-file-code"></i> Case Study
+                </button>
+                <a href="https://github.com/conwnet/github1s" target="_blank" rel="noopener noreferrer" class="github-code-link" aria-label="DevSync GitHub Repository" title="Inspect Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i> <span>GitHub Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM MEMBERS SECTION -->
+    <section class="team-section section-padding bg-alt" id="team">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">THE MINDS BEHIND SYNAPSE</span>
+          <h2 class="section-title">Core Development Team</h2>
+          <p class="section-subtitle">
+            Senior computer science students combining rigorous academic theory with cutting-edge industry software craft.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- Member 1: Shivansh -->
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="./images/avatar-shivansh.svg"
+                   onerror="this.onerror=null; this.src='./assets/avatar-shivansh.svg'; this.onerror=function(){this.src='avatar-shivansh.svg';};"
+                   alt="Portrait illustration of Shivansh - Team Lead and Distributed Systems Architect at Synapse Collective"
+                   class="team-avatar"
+                   width="200"
+                   height="200"
+                   loading="lazy"
+                   decoding="async" />
+              <span class="team-badge-tag lead">Team Lead</span>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Shivansh</h3>
+              <p class="team-role">Lead Full-Stack Architect</p>
+              <p class="team-uni"><i class="fa-solid fa-graduation-cap"></i> UC Berkeley • EECS '26</p>
+              <p class="team-bio">
+                Specializes in event-driven microservices, distributed system fault-tolerance, and high-performance TypeScript/Go APIs. Former SWE Intern at CloudScale.
+              </p>
+              <div class="team-skills-row">
+                <span class="team-skill-chip">Next.js</span>
+                <span class="team-skill-chip">Go</span>
+                <span class="team-skill-chip">System Design</span>
+              </div>
+              <div class="team-card-footer">
+                <div class="team-socials">
+                  <a href="https://github.com/torvalds" target="_blank" rel="noopener noreferrer" aria-label="Shivansh's GitHub Profile" title="Shivansh on GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Shivansh's LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="mailto:shivansh@synapse-collective.dev" aria-label="Email Shivansh"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <button class="btn btn-outline btn-xs hire-member-btn" data-name="Shivansh">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2: Riya -->
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="./images/avatar-riya.svg"
+                   onerror="this.onerror=null; this.src='./assets/avatar-riya.svg'; this.onerror=function(){this.src='avatar-riya.svg';};"
+                   alt="Portrait illustration of Riya - Senior AI and Machine Learning Researcher at Synapse Collective"
+                   class="team-avatar"
+                   width="200"
+                   height="200"
+                   loading="lazy"
+                   decoding="async" />
+              <span class="team-badge-tag ai">AI / ML Lead</span>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Riya</h3>
+              <p class="team-role">AI &amp; Machine Learning Researcher</p>
+              <p class="team-uni"><i class="fa-solid fa-graduation-cap"></i> Stanford University • CS (AI) '26</p>
+              <p class="team-bio">
+                Researches multi-agent reasoning, retrieval-augmented generation (RAG), and parameter-efficient model fine-tuning. Undergraduate AI Research Fellow.
+              </p>
+              <div class="team-skills-row">
+                <span class="team-skill-chip">PyTorch</span>
+                <span class="team-skill-chip">LangChain</span>
+                <span class="team-skill-chip">Vector RAG</span>
+              </div>
+              <div class="team-card-footer">
+                <div class="team-socials">
+                  <a href="https://github.com/karpathy" target="_blank" rel="noopener noreferrer" aria-label="Riya's GitHub Profile" title="Riya on GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Riya's LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="mailto:riya@synapse-collective.dev" aria-label="Email Riya"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <button class="btn btn-outline btn-xs hire-member-btn" data-name="Riya">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3: Shristi -->
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="./images/avatar-shristi.svg"
+                   onerror="this.onerror=null; this.src='./assets/avatar-shristi.svg'; this.onerror=function(){this.src='avatar-shristi.svg';};"
+                   alt="Portrait illustration of Shristi - Lead UI/UX Technologist and Design Systems Architect at Synapse Collective"
+                   class="team-avatar"
+                   width="200"
+                   height="200"
+                   loading="lazy"
+                   decoding="async" />
+              <span class="team-badge-tag design">Design Tech</span>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Shristi</h3>
+              <p class="team-role">UI/UX &amp; Frontend Technologist</p>
+              <p class="team-uni"><i class="fa-solid fa-graduation-cap"></i> Carnegie Mellon • HCI &amp; CS '25</p>
+              <p class="team-bio">
+                Obsessed with fluid micro-interactions, responsive design systems, WebGL canvas shaders, and building fully accessible WCAG 2.1 AA interfaces.
+              </p>
+              <div class="team-skills-row">
+                <span class="team-skill-chip">Tailwind</span>
+                <span class="team-skill-chip">React</span>
+                <span class="team-skill-chip">Design Systems</span>
+              </div>
+              <div class="team-card-footer">
+                <div class="team-socials">
+                  <a href="https://github.com/shadcn" target="_blank" rel="noopener noreferrer" aria-label="Shristi's GitHub Profile" title="Shristi on GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Shristi's LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="mailto:shristi@synapse-collective.dev" aria-label="Email Shristi"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <button class="btn btn-outline btn-xs hire-member-btn" data-name="Shristi">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 4: Harsh -->
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="./images/avatar-harsh.svg"
+                   onerror="this.onerror=null; this.src='./assets/avatar-harsh.svg'; this.onerror=function(){this.src='avatar-harsh.svg';};"
+                   alt="Portrait illustration of Harsh - Cloud Infrastructure and Site Reliability DevOps Lead at Synapse Collective"
+                   class="team-avatar"
+                   width="200"
+                   height="200"
+                   loading="lazy"
+                   decoding="async" />
+              <span class="team-badge-tag infra">DevOps / Cloud</span>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Harsh</h3>
+              <p class="team-role">Cloud Infrastructure &amp; Systems Lead</p>
+              <p class="team-uni"><i class="fa-solid fa-graduation-cap"></i> MIT • Systems Engineering '26</p>
+              <p class="team-bio">
+                Certified AWS Solutions Architect. Designs zero-downtime Kubernetes deployments, multi-cloud Terraform setups, and robust automated security pipelines.
+              </p>
+              <div class="team-skills-row">
+                <span class="team-skill-chip">Docker</span>
+                <span class="team-skill-chip">Kubernetes</span>
+                <span class="team-skill-chip">AWS Cloud</span>
+              </div>
+              <div class="team-card-footer">
+                <div class="team-socials">
+                  <a href="https://github.com/kelseyhightower" target="_blank" rel="noopener noreferrer" aria-label="Harsh's GitHub Profile" title="Harsh on GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Harsh's LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="mailto:harsh@synapse-collective.dev" aria-label="Email Harsh"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <button class="btn btn-outline btn-xs hire-member-btn" data-name="Harsh">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section class="achievements-section section-padding" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">VERIFIED MILESTONES</span>
+          <h2 class="section-title">Achievements &amp; Certifications</h2>
+          <p class="section-subtitle">
+            Notable accolades, hackathon victories, and technical credentials earned by our team.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Achievement 1: MIT HackNation -->
+          <div class="achievement-card featured-achievement">
+            <div class="achievement-icon-wrap gold-glow">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-header-meta">
+                <span class="badge badge-gold">1st Place Overall</span>
+                <span class="achievement-date">October 2025</span>
+              </div>
+              <h3 class="achievement-title">MIT HackNation 2025 • Grand Champion</h3>
+              <p class="achievement-org">Massachusetts Institute of Technology (Global Collegiate)</p>
+              <p class="achievement-desc">
+                Awarded <strong>1st Place Grand Prize ($15,000)</strong> out of 340+ international university teams for engineering <em>NeuroFlow</em>, an autonomous multi-agent tool-calling and workflow orchestration framework.
+              </p>
+              <div class="achievement-actions">
+                <button class="btn btn-outline btn-sm view-cert-btn" data-cert="hackathon">
+                  <i class="fa-solid fa-certificate"></i> View Verified Certificate
+                </button>
+                <span class="sample-label">Fictional Sample Milestone</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 2: AWS Certified Solutions Architect -->
+          <div class="achievement-card">
+            <div class="achievement-icon-wrap orange-glow">
+              <i class="fa-brands fa-aws"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-header-meta">
+                <span class="badge badge-orange">Official Certification</span>
+                <span class="achievement-date">August 2025 – 2028</span>
+              </div>
+              <h3 class="achievement-title">AWS Certified Solutions Architect</h3>
+              <p class="achievement-org">Amazon Web Services (Associate Level)</p>
+              <p class="achievement-desc">
+                Demonstrated validated mastery in designing resilient, highly available, decoupled microservices, secure VPC topologies, automated IAM policies, and cost-optimized cloud architectures.
+              </p>
+              <div class="achievement-actions">
+                <button class="btn btn-outline btn-sm view-cert-btn" data-cert="aws">
+                  <i class="fa-solid fa-award"></i> View Credential Badge
+                </button>
+                <span class="sample-label">Fictional Sample Credential</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 3: Open Source Impact -->
+          <div class="achievement-card">
+            <div class="achievement-icon-wrap purple-glow">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-header-meta">
+                <span class="badge badge-purple">Open Source Impact</span>
+                <span class="achievement-date">June 2025</span>
+              </div>
+              <h3 class="achievement-title">2,500+ GitHub Stars &amp; 40k Downloads</h3>
+              <p class="achievement-org">DevSync Collaborative IDE Protocol</p>
+              <p class="achievement-desc">
+                Authored and open-sourced the peer-to-peer WebRTC CRDT state synchronization library, widely adopted by student hackathons and remote pair-programming communities across the country.
+              </p>
+              <div class="achievement-actions">
+                <a href="https://github.com/yjs/yjs" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="DevSync CRDT GitHub Repository">
+                  <i class="fa-brands fa-github"></i> Explore Open Source Repo (14k+ Stars)
+                </a>
+                <span class="sample-label">Fictional Sample Milestone</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 4: University Research Fellowship -->
+          <div class="achievement-card">
+            <div class="achievement-icon-wrap emerald-glow">
+              <i class="fa-solid fa-flask-vial"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-header-meta">
+                <span class="badge badge-green">Research Grant</span>
+                <span class="achievement-date">Spring 2025</span>
+              </div>
+              <h3 class="achievement-title">Collegiate Undergraduate AI Grant</h3>
+              <p class="achievement-org">Joint Innovation &amp; Emerging Technologies Fellowship ($25,000)</p>
+              <p class="achievement-desc">
+                Selected for a competitive $25,000 research stipend to investigate edge-computed localized retrieval models and latency optimizations in low-power developer workstations.
+              </p>
+              <div class="achievement-actions">
+                <button class="btn btn-outline btn-sm view-cert-btn" data-cert="hackathon">
+                  <i class="fa-solid fa-scroll"></i> View Research Abstract
+                </button>
+                <span class="sample-label">Fictional Sample Grant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE US SECTION -->
+    <section class="contact-section section-padding bg-alt" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">LET'S CONNECT</span>
+          <h2 class="section-title">Ready to Collaborate or Hire Us?</h2>
+          <p class="section-subtitle">
+            Whether you're a recruiter seeking top student engineering talent, a startup needing a high-impact MVP, or a researcher wanting to collaborate, we'd love to chat.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Information & Channels -->
+          <div class="contact-info-card">
+            <h3 class="contact-card-title">Get in Touch Directly</h3>
+            <p class="contact-intro">
+              We respond promptly to recruiters, potential clients, and open-source collaborators. You can reach out directly via email or fill out the inquiry form.
+            </p>
+
+            <div class="contact-methods-list">
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:contact@synapse-collective.dev" class="method-link">contact@synapse-collective.dev</a>
+                  <span class="method-sub">Typically responds within 12 hours</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Campus Hub &amp; Location</span>
+                  <span class="method-text">San Francisco Bay Area, CA &amp; Remote</span>
+                  <span class="method-sub">PST Timezone (Available globally)</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-brands fa-discord"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Discord Dev Community</span>
+                  <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="method-link">discord.gg/synapse-dev</a>
+                  <span class="method-sub">Join 350+ student devs</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Current Availability</span>
+                  <span class="availability-pill active-badge">
+                    <span class="pulse-indicator"></span> Open for Summer 2026 Internships &amp; Contracts
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download CV callout box -->
+            <div class="cv-callout-box">
+              <div class="cv-callout-text">
+                <strong>Need our full resume &amp; team profile?</strong>
+                <span>Download the complete qualifications and project dossier.</span>
+              </div>
+              <button class="btn btn-outline btn-sm download-cv-trigger">
+                <i class="fa-solid fa-download"></i> Download CV
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Form with Robust Validation -->
+          <div class="contact-form-card">
+            <h3 class="contact-card-title">Send a Project / Hiring Inquiry</h3>
+            <p class="form-disclaimer">
+              <i class="fa-solid fa-circle-info"></i> All submissions are validated instantly on the client side with interactive feedback.
+            </p>
+
+            <form id="contact-form" class="styled-form" novalidate>
+              
+              <!-- Name & Email Row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Sarah Connor" required autocomplete="name" />
+                  </div>
+                  <span class="form-error-msg" id="name-error">Please enter your name (at least 2 characters).</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-at input-icon"></i>
+                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. sarah@company.com" required autocomplete="email" />
+                  </div>
+                  <span class="form-error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <!-- Inquiry Type & Preferred Member -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-inquiry-type" class="form-label">Inquiry Purpose <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-list-check input-icon"></i>
+                    <select id="contact-inquiry-type" name="inquiryType" class="form-select" required>
+                      <option value="">Select purpose...</option>
+                      <option value="internship">Internship / Full-time Opportunity</option>
+                      <option value="client-project">Client Development / MVP Project</option>
+                      <option value="hackathon">Hackathon / Technical Collaboration</option>
+                      <option value="advisory">Advisory / General Question</option>
+                    </select>
+                  </div>
+                  <span class="form-error-msg" id="inquiry-error">Please select your inquiry purpose.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-target-member" class="form-label">Direct to Member (Optional)</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-address-card input-icon"></i>
+                    <select id="contact-target-member" name="targetMember" class="form-select">
+                      <option value="entire-team">Entire Synapse Team</option>
+                      <option value="Shivansh">Shivansh (Full-Stack / Lead)</option>
+                      <option value="Riya">Riya (AI &amp; ML)</option>
+                      <option value="Shristi">Shristi (Frontend &amp; UI)</option>
+                      <option value="Harsh">Harsh (DevOps &amp; Cloud)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Message -->
+              <div class="form-group">
+                <div class="label-with-counter">
+                  <label for="contact-message" class="form-label">Project Details / Message <span class="required-star">*</span></label>
+                  <span class="char-counter" id="char-counter">0 / 500</span>
+                </div>
+                <div class="input-wrapper textarea-wrapper">
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your project, timeline, tech stack, or open role..." required maxlength="500"></textarea>
+                </div>
+                <span class="form-error-msg" id="message-error">Please enter a message (at least 15 characters).</span>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-actions">
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block btn-lg">
+                  <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Inquiry</span>
+                  <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+                </button>
+              </div>
+
+              <!-- Form Success Feedback Box -->
+              <div id="form-success-box" class="form-feedback-box success-box hidden" role="alert">
+                <div class="feedback-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="feedback-text">
+                  <h4>Inquiry Sent Successfully!</h4>
+                  <p>Thank you for reaching out. A confirmation has been logged and our team lead will respond within 12 hours.</p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <!-- Footer Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <div class="brand-logo">
+            <span class="logo-symbol"><i class="fa-solid fa-brain"></i></span>
+            <span class="logo-text">SYNAPSE<span class="logo-dot">.</span>DEV</span>
+          </div>
+          <p class="footer-tagline">
+            Collegiate software engineering collective from UC Berkeley, Stanford &amp; MIT. Architecting scalable web applications and intelligent AI platforms.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord Server"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://devpost.com" target="_blank" rel="noopener noreferrer" aria-label="Devpost Profile"><i class="fa-solid fa-code-fork"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Column 2: Quick Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Our Collective</a></li>
+            <li><a href="#skills">Skills &amp; Technology Stack</a></li>
+            <li><a href="#projects">Production Projects</a></li>
+            <li><a href="#team">Core Team Members</a></li>
+            <li><a href="#achievements">Awards &amp; Milestones</a></li>
+            <li><a href="#contact">Contact &amp; Hire Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Featured Projects -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Projects</h4>
+          <ul class="footer-links">
+            <li><a href="#projects" class="footer-proj-link" data-project="neuroflow">NeuroFlow AI Engine</a></li>
+            <li><a href="#projects" class="footer-proj-link" data-project="cloudpulse">CloudPulse Telemetry</a></li>
+            <li><a href="#projects" class="footer-proj-link" data-project="campuslink">CampusLink Platform</a></li>
+            <li><a href="#projects" class="footer-proj-link" data-project="devsync">DevSync Collaborative IDE</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Status & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><button class="footer-btn-link download-cv-trigger"><i class="fa-solid fa-file-pdf"></i> Download Team CV (PDF)</button></li>
+            <li><a href="#achievements"><i class="fa-solid fa-award"></i> Verification Credentials</a></li>
+            <li><a href="mailto:contact@synapse-collective.dev"><i class="fa-solid fa-envelope"></i> contact@synapse-collective.dev</a></li>
+            <li><span class="status-indicator-footer"><span class="pulse-green"></span> Operational Status: All Systems Live</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Synapse Collective</strong>. All rights reserved. Created for demonstration portfolio presentation.
+        </p>
+        <div class="footer-badge">
+          <span>Built with semantic HTML5, modern CSS3 &amp; vanilla JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- MODAL: INTERACTIVE PROJECT CASE STUDY & LIVE DEMO -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-content modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-category-tag" id="modal-project-category">Category</span>
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="close-project-modal" aria-label="Close Project Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-project-body">
+        <!-- Content dynamically injected via script.js -->
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="modal-github-link">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-primary btn-sm" id="modal-interactive-action">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Full Demo
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: CERTIFICATE VIEWER -->
+  <div id="cert-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-cert-title">
+    <div class="modal-content modal-md">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-category-tag" id="modal-cert-tag">Verified Credential</span>
+          <h3 class="modal-title" id="modal-cert-title">Certificate Inspection</h3>
+        </div>
+        <button class="modal-close-btn" id="close-cert-modal" aria-label="Close Certificate Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body cert-modal-body">
+        <div class="cert-image-container">
+          <img id="cert-modal-img"
+               src="./images/cert-hackathon.svg"
+               onerror="this.onerror=null; this.src='./assets/cert-hackathon.svg'; this.onerror=function(){this.src='cert-hackathon.svg';};"
+               alt="Official MIT HackNation 2025 Grand Prize Winner Certificate Preview for Synapse Collective"
+               class="cert-full-img"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <div class="cert-meta-details" id="cert-meta-details">
+          <!-- Dynamic details -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="fictional-cert-note"><i class="fa-solid fa-circle-info"></i> Fictional sample credential labeled for portfolio presentation.</span>
+        <button class="btn btn-primary btn-sm" id="close-cert-btn">Close Inspection</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>

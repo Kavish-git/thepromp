@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="p1Shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#p1Grad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="0" y1="95" x2="600" y2="95"/>
+    <line x1="0" y1="190" x2="600" y2="190"/>
+    <line x1="0" y1="285" x2="600" y2="285"/>
+    <line x1="150" y1="0" x2="150" y2="380"/>
+    <line x1="300" y1="0" x2="300" y2="380"/>
+    <line x1="450" y1="0" x2="450" y2="380"/>
+  </g>
+
+  <!-- Flow Nodes Graphic -->
+  <!-- Connecting Lines -->
+  <path d="M 130 190 C 200 190, 220 120, 300 120 C 380 120, 400 190, 470 190" fill="none" stroke="url(#purpleGlow)" stroke-width="3" stroke-dasharray="6,6"/>
+  <path d="M 130 190 C 200 190, 220 260, 300 260 C 380 260, 400 190, 470 190" fill="none" stroke="url(#purpleGlow)" stroke-width="3"/>
+
+  <!-- Left Node: Input Trigger -->
+  <g transform="translate(70, 150)" filter="url(#p1Shadow)">
+    <rect width="120" height="80" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="60" cy="30" r="14" fill="#8b5cf6" opacity="0.2"/>
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="14" fill="#a78bfa" text-anchor="middle">⚡</text>
+    <text x="60" y="58" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#f8fafc" text-anchor="middle">Event Ingestion</text>
+    <text x="60" y="70" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Webhooks / API</text>
+  </g>
+
+  <!-- Top Center Node: AI LLM Inference -->
+  <g transform="translate(240, 80)" filter="url(#p1Shadow)">
+    <rect width="120" height="80" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="60" cy="30" r="14" fill="#3b82f6" opacity="0.2"/>
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle">🧠</text>
+    <text x="60" y="58" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#f8fafc" text-anchor="middle">Agent Planner</text>
+    <text x="60" y="70" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">FastAPI + LangChain</text>
+  </g>
+
+  <!-- Bottom Center Node: Vector RAG Memory -->
+  <g transform="translate(240, 220)" filter="url(#p1Shadow)">
+    <rect width="120" height="80" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="60" cy="30" r="14" fill="#06b6d4" opacity="0.2"/>
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="14" fill="#22d3ee" text-anchor="middle">🗄️</text>
+    <text x="60" y="58" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#f8fafc" text-anchor="middle">Vector Store</text>
+    <text x="60" y="70" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Pinecone + Redis</text>
+  </g>
+
+  <!-- Right Node: Action Output -->
+  <g transform="translate(410, 150)" filter="url(#p1Shadow)">
+    <rect width="120" height="80" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <circle cx="60" cy="30" r="14" fill="#10b981" opacity="0.2"/>
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="14" fill="#34d399" text-anchor="middle">🚀</text>
+    <text x="60" y="58" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#f8fafc" text-anchor="middle">Output Stream</text>
+    <text x="60" y="70" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Real-time WebSocket</text>
+  </g>
+
+  <!-- Overlay Header Pill -->
+  <rect x="30" y="25" width="130" height="28" rx="14" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="95" y="44" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#c4b5fd" text-anchor="middle">AI AGENT ENGINE</text>
+</svg>
